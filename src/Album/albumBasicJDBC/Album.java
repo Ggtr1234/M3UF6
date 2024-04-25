@@ -95,7 +95,6 @@ public class Album {
     }
 
     public Album llegeixAlbum(int idAlbum) {
-        Statement stmt = null;
         Album album = null;
         try {
             String query = "SELECT * FROM Album WHERE AlbumId = ?";
