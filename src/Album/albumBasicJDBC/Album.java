@@ -119,7 +119,6 @@ public class Album {
     }
 
     public void modificaAlbum(int idAlbum, String nouTitol, int nouIdArtista) {
-        Statement stmt = null;
         try {
             con.setAutoCommit(false);
             String query = "UPDATE Album set Title = ?, ArtistId = ? WHERE AlbumId = ?";
