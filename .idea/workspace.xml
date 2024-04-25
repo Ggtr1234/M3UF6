@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/af294e56-f5e9-4f83-8e9d-eb349579cd82.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/af294e56-f5e9-4f83-8e9d-eb349579cd82/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinook_Sqlite.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M3UF6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlite-jdbc-3.7.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Connexio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/MainBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumDao/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumDao/AlbumDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumDao/AlbumDaoImplementacio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumDao/Connexio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/albumDao/MainDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/metadades/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/sqlInjection/AlbumSQLInjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/sqlInjection/Connexio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Album/sqlInjection/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Artist/artistBasicJDBC/Artist.java" afterDir="false" />
+    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <change beforePath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,12 +96,33 @@
       <workItem from="1713885858727" duration="886000" />
       <workItem from="1713970541857" duration="5275000" />
       <workItem from="1713983223814" duration="13000" />
-      <workItem from="1714057891783" duration="2967000" />
+      <workItem from="1714057891783" duration="3235000" />
     </task>
+    <task id="LOCAL-00001" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <option name="closed" value="true" />
+      <created>1714063095676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714063095676</updated>
+    </task>
+    <task id="LOCAL-00002" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <option name="closed" value="true" />
+      <created>1714063256962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714063256962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'" />
+    <option name="LAST_COMMIT_MESSAGE" value="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
