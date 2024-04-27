@@ -61,10 +61,12 @@ public class Album {
 
     @Override
     public String toString() {
-        return "\nAlbum: " +
-                "id=" + idAlbum +
-                ", nom='" + titol + '\'' +
-                ", artista id=" + idArtista;
+        return "\nAlbum{" +
+                "idAlbum=" + idAlbum +
+                ", artista=" + artista +
+                ", titol='" + titol + '\'' +
+                ", idArtista=" + idArtista +
+                "}";
     }
 
     public int creaAlbum(String titol, int idArtista) {
@@ -99,17 +101,27 @@ public class Album {
         try {
             String query = "SELECT * FROM Album WHERE AlbumId = ?";
             PreparedStatement ps = con.prepareStatement(query);
+
+            String query2 = "SELECT * FROM Artist WHERE ArtistId = ?";
+            PreparedStatement ps2 = con.prepareStatement(query2);
+
+
             ps.setInt(1, idAlbum);
+            ps2.setInt(1,idAlbum);
 
             ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
+            ResultSet rs2 = ps2.executeQuery();
+            while (rs.next() & rs2.next()) {
                 int albumId = rs.getInt("AlbumId");
                 String title = rs.getString("Title");
                 int artistId = rs.getInt("ArtistId");
-                album = new Album(albumId, title, artistId);
+                String nomArtist = rs2.getString("Name");
+                album = new Album(albumId, title, new Artist(artistId,nomArtist));
             }
             rs.close();
             ps.close();
+            rs2.close();
+            ps2.close();
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
         }
@@ -152,18 +164,22 @@ public class Album {
 
     public List<Album> seleccionaAlbums() {
         Statement stmt = null;
+        Statement stmt2 = null;
         List<Album> albums = new ArrayList<>();
         try {
             //Crear una consulta / query amb un object Statement
             stmt = con.createStatement();
+            stmt2 = con.createStatement();
             //Executar la consulta
             ResultSet rs = stmt.executeQuery("SELECT * FROM Album;");
-            ResultSet rs2 = stmt.executeQuery("SELECT * FROM Artist;");
+
             //Procesar el resultat amb l’objecte ResultSet
-            while (rs.next() & rs2.next()) {
+            while (rs.next()) {
                 int albumId = rs.getInt("AlbumId");
                 String title = rs.getString("Title");
-                int artistId = rs2.getInt("ArtistId");
+                int artistId = rs.getInt("ArtistId");
+                ResultSet rs2 = stmt2.executeQuery("SELECT * FROM Artist WHERE ArtistId = " + artistId);
+                rs2.next();
                 String nomArtist = rs2.getString("Name");
                 albums.add(new Album(albumId, title, new Artist(artistId,nomArtist)));
             }

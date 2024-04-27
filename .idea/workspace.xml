@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
@@ -96,7 +97,8 @@
       <workItem from="1713885858727" duration="886000" />
       <workItem from="1713970541857" duration="5275000" />
       <workItem from="1713983223814" duration="13000" />
-      <workItem from="1714057891783" duration="3235000" />
+      <workItem from="1714057891783" duration="4571000" />
+      <workItem from="1714144399917" duration="2654000" />
     </task>
     <task id="LOCAL-00001" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
       <option name="closed" value="true" />
@@ -114,7 +116,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714063256962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <option name="closed" value="true" />
+      <created>1714063416441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714063416441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+      <option name="closed" value="true" />
+      <created>1714063481781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714063481781</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
