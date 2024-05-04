@@ -40,7 +40,7 @@ public class Album {
 
     @Override
     public String toString() {
-        return "\nAlbum: " +
+        return "Album: " +
                 "id=" + idAlbum +
                 ", nom='" + nom + '\'' +
                 ", artista id=" + idArtista;

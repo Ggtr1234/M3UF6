@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
+    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="punto 2 hecho en teoria">
+      <change afterPath="$PROJECT_DIR$/src/Track/trackBasicJDBC/Connexio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Track/trackBasicJDBC/MainBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Track/trackBasicJDBC/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/employee/employeeDao/Connexio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/employee/employeeDao/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDaoImplementacio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/genre/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mediaType/MediaType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album/albumBasicJDBC/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Album/albumDao/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album/albumDao/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,36 +38,44 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2fVUhS9tOccRLUWyQgFVXMoPtj0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainBasic.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/llere/IdeaProjects/M3UF6/sqlite-jdbc-3.7.2.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainBasic.executor": "Run",
+    "Application.Track.trackBasicJDBC.MainBasic.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/llere/IdeaProjects/M3UF6/sqlite-jdbc-3.7.2.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\llere\IdeaProjects\M3UF6" />
       <recent name="C:\Users\llere\IdeaProjects\M3UF6\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Track.trackBasicJDBC" />
+      <recent name="employee.employeeDao" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +117,9 @@
       <workItem from="1713970541857" duration="5275000" />
       <workItem from="1713983223814" duration="13000" />
       <workItem from="1714057891783" duration="4571000" />
-      <workItem from="1714144399917" duration="2654000" />
+      <workItem from="1714144399917" duration="2685000" />
+      <workItem from="1714396304782" duration="484000" />
+      <workItem from="1714412760979" duration="17754000" />
     </task>
     <task id="LOCAL-00001" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
       <option name="closed" value="true" />
@@ -132,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714063481781</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="punto 2 hecho en teoria">
+      <option name="closed" value="true" />
+      <created>1714216861430</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714216861430</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +169,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'" />
-    <option name="LAST_COMMIT_MESSAGE" value="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'" />
+    <MESSAGE value="punto 2 hecho en teoria" />
+    <option name="LAST_COMMIT_MESSAGE" value="punto 2 hecho en teoria" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
