@@ -44,47 +44,73 @@ public class MainBasic {
                     System.out.println();
                     break;
                 }
-//                case 3:{
-//                    System.out.println("Introdueix el titol nou");
-//                    String titol = sc.nextLine();
-//                    System.out.println("Introdueix idArtista nou");
-//                    try{
-//                        int idArtista = sc.nextInt();
-//                        System.out.println(album.creaAlbum(titol, idArtista));
-//                    }catch (InputMismatchException e){
-//                        sc.nextLine();
-//                        System.out.println("Error introdueix nombre enter\n Error: " + e.toString());
-//                    }
-//
-//                    break;
-//                }
-//                case 4:{
-//                    System.out.println("Introdueix quin album vols modificar");
-//                    try{
-//                        int idAlbum = sc.nextInt();
-//                        System.out.println("Introdueix el nou títol");
-//                        String titol = sc.nextLine();
-//                        System.out.println("Introdueix el idArtista nou");
-//                        int idArtista = sc.nextInt();sc.nextLine();
-//                        if (artist.verificarExistenciaArtista(idArtista)){
-//                            album.modificaAlbum(idAlbum, titol, idArtista);
-//                        }else {
-//                            System.out.println("Este artista no existe");
-//                        }
-//
-//                    }catch (InputMismatchException e){
-//                        sc.nextLine();
-//                        System.out.println("Error introdueix nombre enter\n Error: " + e.toString());
-//                    }
-//
-//                    break;
-//                }
-//                case 5:{
-//                    System.out.println("Introdueix quin album vols eliminar");
-//                    int idAlbum = sc.nextInt();sc.nextLine();
-//                    album.eliminaAlbum(idAlbum);
-//                    break;
-//                }
+                case 3:{
+
+                    try{
+                        System.out.println("Introdueix el nom de Track nou");
+                        String nom = sc.nextLine();
+                        System.out.println("introdueix id de album");
+                        int albumId = sc.nextInt();
+                        System.out.println("Introdueix id de MedyaType");
+                        int mediaTypeId = sc.nextInt();
+                        System.out.println("Introdueix genreId");
+                        int genreId = sc.nextInt();
+                        System.out.println("Introdueix el autor nou");
+                        String autor = sc.next();
+                        System.out.println("Introduiex milliseconds que dura la Track");
+                        int milliseconds = sc.nextInt();
+                        System.out.println("Introdueix quants bytes ocupa");
+                        int bytes = sc.nextInt();
+                        System.out.println("Introdueix Preu: ");
+                        int unitPrice = sc.nextInt();
+
+                        System.out.println(track.creaTrack(nom,albumId,mediaTypeId,genreId,autor,milliseconds,bytes,unitPrice));
+                    }catch (InputMismatchException e){
+                        sc.nextLine();
+                        System.out.println("Error\n Error: " + e.toString());
+                    }
+
+                    break;
+                }
+                case 4:{
+                    System.out.println("Introdueix quin Track vols modificar");
+                    try{
+                        int trackId = sc.nextInt();
+                        System.out.println("Introdueix el nom de Track nou");
+                        String nom = sc.next();
+                        System.out.println("introdueix id de album");
+                        int albumId = sc.nextInt();sc.nextLine();
+                        System.out.println("Introdueix id de MedyaType");
+                        int mediaTypeId = sc.nextInt();
+                        System.out.println("Introdueix genreId");
+                        int genreId = sc.nextInt();
+                        System.out.println("Introdueix el autor nou");
+                        String autor = sc.next();
+                        System.out.println("Introduiex milliseconds que dura la Track");
+                        int milliseconds = sc.nextInt();
+                        System.out.println("Introdueix quants bytes ocupa");
+                        int bytes = sc.nextInt();
+                        System.out.println("Introdueix Preu: ");
+                        int unitPrice = sc.nextInt();
+                        if (track.verificarExistenciaTrack(trackId)){
+                            track.modificaTrack(trackId,nom,albumId,mediaTypeId,genreId,autor,milliseconds,bytes,unitPrice);
+                        }else {
+                            System.out.println("Este artista no existe");
+                        }
+
+                    }catch (InputMismatchException e){
+                        sc.nextLine();
+                        System.out.println("Error introdueix nombre enter\n Error: " + e.toString());
+                    }
+
+                    break;
+                }
+                case 5:{
+                    System.out.println("Introdueix quin Track vols eliminar");
+                    int trackId = sc.nextInt();sc.nextLine();
+                    track.eliminaTrack(trackId);
+                    break;
+                }
                 case 0:{
 
                     break;
