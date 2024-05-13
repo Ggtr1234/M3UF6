@@ -9,5 +9,5 @@ public interface EmployeeDAO {
     //public void delete(Album album) throws SQLException;
     public Employee read(int employeeID) throws SQLException;
     public void update(Employee employee) throws SQLException;
-    public List<Employee> getAlbums() throws SQLException;
+    public List<Employee> getEmployees() throws SQLException;
 }

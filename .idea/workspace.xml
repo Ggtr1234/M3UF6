@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="falta acabar track">
+    <list default="true" id="8803d513-cac6-4e6f-b88e-7f9d5ddd769d" name="Changes" comment="track Acabado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chinook_Sqlite.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Chinook_Sqlite.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Track/trackBasicJDBC/MainBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Track/trackBasicJDBC/MainBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Track/trackBasicJDBC/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Track/trackBasicJDBC/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/employeeDao/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/employeeDao/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDaoImplementacio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/employeeDao/EmployeeDaoImplementacio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,12 @@
       <workItem from="1714144399917" duration="2685000" />
       <workItem from="1714396304782" duration="484000" />
       <workItem from="1714412760979" duration="17754000" />
-      <workItem from="1714829184903" duration="5017000" />
+      <workItem from="1714829184903" duration="9949000" />
+      <workItem from="1715237654442" duration="92000" />
+      <workItem from="1715246418951" duration="1000" />
+      <workItem from="1715263651406" duration="111000" />
+      <workItem from="1715353616201" duration="19000" />
+      <workItem from="1715356194383" duration="1861000" />
     </task>
     <task id="LOCAL-00001" summary="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'">
       <option name="closed" value="true" />
@@ -162,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714829207359</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="track Acabado">
+      <option name="closed" value="true" />
+      <created>1715019503135</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715019503135</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +185,8 @@
     <MESSAGE value="falta punto 2 esta mediohacer,sale error: java.sql.SQLException: no such column: 'AlbumId'" />
     <MESSAGE value="punto 2 hecho en teoria" />
     <MESSAGE value="falta acabar track" />
-    <option name="LAST_COMMIT_MESSAGE" value="falta acabar track" />
+    <MESSAGE value="track Acabado" />
+    <option name="LAST_COMMIT_MESSAGE" value="track Acabado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

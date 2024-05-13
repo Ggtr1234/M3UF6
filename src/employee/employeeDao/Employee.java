@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Employee {
     private int employeeID;
+    private String firstName;
     private String lastName;
     private String title;
     private int reportsTo;
@@ -17,6 +18,14 @@ public class Employee {
     private String phone;
     private String fax;
     private String email;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     public int getEmployeeID() {
         return employeeID;
@@ -50,16 +59,16 @@ public class Employee {
         this.reportsTo = reportsTo;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
+    public java.sql.Date getBirthDate() {
+        return (java.sql.Date) birthDate;
     }
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
-    public Date getHireDate() {
-        return hireDate;
+    public java.sql.Date getHireDate() {
+        return (java.sql.Date) hireDate;
     }
 
     public void setHireDate(Date hireDate) {
@@ -127,6 +136,27 @@ public class Employee {
     }
 
     public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Employee() {
+    }
+
+    public Employee(int employeeID, String firstName, String lastName, String title, int reportsTo, Date birthDate, Date hireDate, String adress, String city, String state, String country, String postalCode, String phone, String fax, String email) {
+        this.employeeID = employeeID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.title = title;
+        this.reportsTo = reportsTo;
+        this.birthDate = birthDate;
+        this.hireDate = hireDate;
+        this.adress = adress;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.postalCode = postalCode;
+        this.phone = phone;
+        this.fax = fax;
         this.email = email;
     }
 
